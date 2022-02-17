@@ -110,6 +110,10 @@ footer.footer .link-social i {
   margin-right: 17.5px;
 }
 
+nav.navbar {
+  height: 168px;
+}
+
 nav.container {
   padding-top: 81px;
 }
@@ -154,6 +158,65 @@ button {
 .button-filled {
   background-color: #FFCD61;
   border: unset;
+}
+
+.button-dark {
+  background-color: #393939;
+  border: unset;
+}
+
+.button-gray {
+  background-color: rgba(203, 203, 212, 0.27);
+  border: unset;
+}
+
+.profile-edit .button-filled,
+.profile-edit .button-dark,
+.profile-edit .button-gray {
+  width: 322px;
+  height: 89px;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.profile-edit .button-dark {
+  color: #FFCD61;
+}
+
+.profile-edit .big-name {
+  font-family: 'Playfair Display', Times, serif;
+  font-weight: bold;
+}
+
+.profile-edit .details {
+  font-weight: bold;
+  color: #B8BECD;
+  font-size: 24px;
+}
+
+.profile-edit .edit-photo {
+  position: absolute;
+  background: #FFCD61;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  min-height: unset;
+  min-width: unset;
+  border: unset;
+  color: #393939;
+  bottom: 0;
+  right: 0;
+}
+
+.input-underline {
+  border: 0;
+  border-bottom: 1px solid #000;
+  padding-bottom: 26px;
+  height: 40px;
+}
+
+.input-underline:focus {
+  outline: none;
 }
 
 
