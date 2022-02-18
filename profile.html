@@ -26,7 +26,7 @@
         <h5>Profile</h5>
       </div>
       <div class="text-center mb-5">
-        <div class="mb-5">
+        <div class="mb-5 d-none d-md-block">
           <div class="d-inline-block position-relative">
             <img src="./assets/images/profile.png" alt="Profile Picure" class="img-thumbnail rounded-circle" />
             <button class="edit-photo"><i class="fa-solid fa-pencil"></i></button>
@@ -43,12 +43,18 @@
       </div>
       <div class="d-flex justify-content-center mb-5">
         <div class="me-5">
-          <input type="radio" name="gender">
-          <label>Male</label>
+          <label class="radio-button">
+            <input type="radio" name="gender"/>
+            <div class="checkmark"></div>
+            <div class="text">Male</div>
+          </label>
         </div>
         <div>
-          <input type="radio" name="gender">
-          <label>Female</label>
+          <label class="radio-button">
+            <input type="radio" name="gender"/>
+            <div class="checkmark"></div>
+            <div class="text">Female</div>
+          </label>
         </div>
       </div>
       <div class="mb-5">

@@ -2,6 +2,10 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+a {
+  color: #000;
+}
+
 .header-forgot {
   background-image: url(./images/header-forgot.png);
   background-repeat: no-repeat;
@@ -98,13 +102,13 @@ footer.footer .description {
   width: 300px;
 }
 
-footer.footer .link-social {
+.link-social {
   border-top: 1px solid #C4C4C4;
   padding: 31px;
   text-align: center;
 }
 
-footer.footer .link-social i {
+.link-social i {
   font-size: 25px;
   margin-left: 17.5px;
   margin-right: 17.5px;
@@ -179,7 +183,7 @@ button {
   font-size: 24px;
 }
 
-.profile-edit .button-dark {
+.button-dark {
   color: #FFCD61;
 }
 
@@ -220,6 +224,74 @@ button {
 }
 
 
+.radio-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.radio-button input {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.radio-button .checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  border: 3px solid #9F9F9F;
+  display: inline-block;
+}
+
+.radio-button .text {
+  display: inline-block;
+  margin-left: 19px;
+}
+
+.radio-button input:checked~.checkmark {
+  border-color: #393939;
+  background-color: #FFCD61;
+}
+
+.login-page .bg-image {
+  background-image: url('./images/banner-login.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-page form {
+  margin: 95px 101px 56px 101px;
+}
+
+.login-page h1 {
+  font-family: 'Playfair Display', Times, serif;
+  font-weight: 900;
+  margin-bottom: 80px;
+}
+
+.form-control[type=email],
+.form-control[type=password],
+.form-control[type=text] {
+  background-color: rgba(218, 218, 218, 0.28);
+  min-height: 59px;
+}
+
+.form-control[type=email]:focus,
+.form-control[type=password]:focus,
+.form-control[type=text]:focus {
+  box-shadow: none;
+  border-color: unset;
+  outline: none;
+}
+
+.form-control[type=email]::placeholder,
+.form-control[type=password]::placeholder,
+.form-control[type=text]::placeholder {
+  color: #393939;
+}
+
+
 @media (max-width: 500px) {
   .header-forgot .header-content {
     padding: 0 10px;
@@ -237,6 +309,15 @@ button {
 @media (max-width: 991px) {
   .toggled-action {
     text-align: center;
+  }
+
+  .profile-edit .button-filled,
+  .profile-edit .button-dark,
+  .profile-edit .button-gray {
+    width: 150px;
+    height: 80px;
+    font-weight: 900;
+    font-size: 24px;
   }
 }
 
